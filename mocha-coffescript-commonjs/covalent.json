@@ -1,0 +1,21 @@
+{
+    "runOnFly": true,
+    "src": "{ROOT}/lib/**/*.coffee",
+    "spec": "{ROOT}/spec/**/*-spec.coffee",
+    "load": [
+        "{ROOT}/spec/window.coffee"
+    ],
+    "env": {
+        "__SOURCE__": "{ROOT}/lib/"
+    },
+    "compilers": {
+        "coffeescript": {
+            "src": "{ROOT}/**/*.coffee"
+        }
+    },
+    "debug": {
+        "logCompiledCode": false,
+        "logErrors": true,
+        "logFilters": false
+    }
+}
